@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+
+    <title>Document</title>
+</head>
+<body>
+    {% include "./superior/barraNav.html" %}
+    {# no temas diseñador, ignora esto#}
+    <h1>hola alumnos</h1>
+    <table>
+        <tr>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+        </tr>
+         <tr>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+        </tr>
+         <tr>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+        </tr>
+    </table>
+    {% if nombre_persona == 'juan' %}
+    <p> el curso lo imparte el profesor titular</p>
+    {% else %}
+    <p>el curso lo implante un suplente </p>
+    {% endif %}
+    <p> el nombre del profesor es {{nombre_persona|upper}} {{apellido_persona|lower}}</p>
+<p>el dia de hoy es {{Fecha_hoy.day}} / {{Fecha_hoy.month}} /  {{Fecha_hoy.year}} <br>
+y al hora es  {{Fecha_hoy.time}} <br> el alumno es: {{alumno_es}} <br>
+
+<p><strong>Temas del curso</strong></p>
+<p>
+    <ul>
+    {% if temas_curso %}
+        {% for temita in temas_curso %}
+    
+          <li>{{temita|first|upper}} </li>  
+    
+        {% endfor %}
+    {% else %}
+    <p> No hay elementos que mostrar</p>
+    {% endif %}
+
+    </ul>
+    
+</p>
+</p>
+</body>
+</html>
