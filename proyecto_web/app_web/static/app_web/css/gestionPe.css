@@ -277,3 +277,53 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+.autor{
+  text-align: left;
+  font-size: 0.8em;
+}
+.relacionPost{
+  width: 75%;
+  text-align: center;
+  color:#ffffff;
+  margin: auto;
+}
+.linksCategorias{
+color: #ffffff !important;
+text-decoration: underline;
+text-align: center;
+margin-right: 1%;
+}
+.linksCategorias:hover{
+  text-align: center;
+  text-decoration: none;
+}
+.centrado{
+  width: 50%;
+ margin: auto;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+ border-radius: 2rem;
+  background-color: rgba(86, 111, 10, 0.858);
+padding: 2rem;
+display: flex;
+justify-content: center;
+}
+input{
+  margin-bottom: 1rem;
+}
+.botonsito{
+  width: 50%;
+  margin: auto;
+}
+.centrado2{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.titulo{
+
+  text-align: center;
+  color: #e3dcdc;
+}

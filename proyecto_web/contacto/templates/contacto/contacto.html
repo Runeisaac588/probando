@@ -1,0 +1,26 @@
+{% extends "app_web/base.html" %}
+
+{%load static %}
+{% block content%}
+
+<div class="centrado"> 
+{%if "valido" in request.GET %}
+
+<P>INFORMACIÓN MANDADA CORRECTAMENTE</P>
+{% endif %}
+    <form action="" method="POST">
+<h1 class="titulo">Escribenos</h1>
+{% csrf_token %} 
+        <table style="color:#fff">
+         
+            {{miFormulario.as_table}} 
+        </table>
+        <div class="centrado2">
+
+            <input type="submit" value="enviar" class="botonsito">
+        </div>
+</form>
+
+</div>
+
+{% endblock %}

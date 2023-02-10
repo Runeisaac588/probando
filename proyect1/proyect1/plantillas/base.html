@@ -1,33 +1,229 @@
-{% load static %}
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{% static 'InfraestructuraEquipo/css/Cedula_511.css' %}"
+    />
 
-    <title>
-        {% block title %} {% endblock %}
+    <title>Cedula 5.1.1</title>
+  </head>
+   <body>
+    <div class="centrado esp">
+      <table  >
+        <tr>
+          <td class="leyenda">P-CACEI-DAC-03-R05</td>
+        </tr>
+         <tr >
+          <td class="leyenda">Revisión: 2</td>
+        </tr>
+         <tr>
+          <td class="leyenda">Vigente a partir del 22 de junio de 2020</td>
+        </tr>
+      
+      </table>
+    </div>
+    <div class="centrado">
+      <table class="tabla511">
+        <caption class="titulo">
+          Cédula 5.1.1 - Características de las aulas
+        </caption>
+        <tr>
+          <th class="subtitulos">1. Descripción general de las aulas</th>
+          <td colspan="3"></td>
+        </tr>
+        <tr>
+          <th class="subtitulos">2. Condiciones necesarias</th>
+          <th class="condicion subtitulos">Adecuada</th>
+          <th class="condicion subtitulos">Inadecuada</th>
+          <th class="subtitulos2">3. Justificacion</th>
+        </tr>
+        <tr class="headt">
+          <th class="subtitulos">a. Suficiencia</th>
+          <td class="condicion"></td>
+          <td class="condicion"></td>
+          <td class="">
+            <textarea
+              class="justifica"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
+        <tr class="headt">
+          <th class="subtitulos">b. Iluminacion</th>
+          <td class="condicion"></td>
+          <td class="condicion"></td>
+          <td class="">
+            <textarea
+              class="justifica"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
 
-    </title>
-    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
-</head>
+        <tr class="headt">
+          <th class="subtitulos">c. Ventilacion</th>
+          <td class="condicion"></td>
+          <td class="condicion"></td>
+          <td class="">
+            <textarea
+              class="justifica"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
 
-<body bgcolor="#ff1180">
+        <tr class="headt">
+          <th class="subtitulos">d. Aislamiento del ruido</th>
+          <td class="condicion"></td>
+          <td class="condicion"></td>
+          <td class="">
+            <textarea
+              class="justifica"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
 
-<h1>Rune Gaming</h1>
-    {% include "./superior/barraNav.html" %}
-<h3>Cursos de programación je</h3>
+        <tr class="headt">
+          <th class="subtitulos">e. Equipo audiovisual</th>
+          <td class="condicion"></td>
+          <td class="condicion"></td>
+          <td class="">
+            <textarea
+              class="justifica"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
 
-{% block content %} 
+        <tr class="headt">
+          <th class="subtitulos">f. Mobiliario</th>
+          <td class="condicion"></td>
+          <td class="condicion"></td>
+          <td class="">
+            <textarea
+              class="justifica"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
 
+        <tr class="headt">
+          <th class="subtitulos">g. Accesibilidad</th>
+          <td class="condicion"></td>
+          <td class="condicion"></td>
+          <td class="">
+            <textarea
+              class="justifica"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
 
+        <tr class="headt">
+          <th class="subtitulos">h. Conectividad</th>
+          <td class="condicion"></td>
+          <td class="condicion"></td>
+          <td class="">
+            <textarea
+              class="justifica"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
 
-{% endblock %}
-<p>
-    Cursos gratuitos
-</p>
-</body>
+        <tr class="headt">
+          <th class="subtitulos">i. Higiene</th>
+          <td class="condicion"></td>
+          <td class="condicion"></td>
+          <td class="">
+            <textarea
+              class="justifica"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr class="headt">
+          <th class="subtitulos">j. Seguridad</th>
+          <td class="condicion"></td>
+          <td class="condicion"></td>
+          <td class="">
+            <textarea
+              class="justifica"
+              name=""
+              id=""
+              cols="30"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="centrado esp">
+      <table class="instrucciones">
+        <caption class="titulo2">
+          Instrucciones de llenado – Cédula 5.1.1
+        </caption>
+        <tr>
+          <th class="celda">Celda</th>
+          <th class="indicaciones">Indicaciones</th>
+        </tr>
+        <tr>
+          <th class="t">1. Descripción general de las aulas</th>
+          <td class="">
+            Descripción en términos generales del número y características de
+            las aulas que apoyan el PE.
+          </td>
+        </tr>
+        <tr>
+          <th class="t">2. Características</th>
+          <td class="">
+            Para cada una de las condiciones necesarias marcar con una X si se
+            considera adecuada o inadecuada para el logro de los atributos de
+            egreso.
+          </td>
+        </tr>
+        <tr>
+          <th class="t">3. Justificación</th>
+          <td class="">
+            Fundamentación de los motivos por los cuales se consideró adecuada o
+            inadecuada la condición correspondiente.
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
-
