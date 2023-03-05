@@ -1,8 +1,27 @@
-{% extends "app_web/base.html" %}
+{% extends "app_web/base.html" %} 
+{%load static %} 
+{% block content%} 
+<div class="container m-xxl-3 ">
+    <div style="float:right; width: 20%; " class="m-3 text-light" >
+       {% include 'carro/widget.html' %} 
+    </div>
 
-{%load static %}
-{% block content%}
+<div class="row " >
+{% for producto in productos %}
+<div class="col-md-3">
+<div class="card m-3" style="width: 100%;" >
 
-<div> <p> </p></div>
-   
+    <img src="{{producto.imagen.url}} " style="height: 13rem;" class="card-img-top w-100">
+    <div class="card-body">
+        <h5 class="card-title ">{{producto.nombre}}</h5>
+        <p class="card-text "> {{producto.precio}} &nbsp;$ </p>
+    </div>
+    <div class="card-footer text-center">
+        <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-success">agregar al carro</a>
+    </div>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
 {% endblock %}

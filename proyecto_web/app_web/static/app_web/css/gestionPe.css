@@ -5,7 +5,9 @@ body {
   background-position: center;
   background-size: cover;
 }
-
+/* body{
+  background-color: rgb(192, 192, 192);
+} */
 h1,
 h2,
 h3,
@@ -326,4 +328,7 @@ input{
 
   text-align: center;
   color: #e3dcdc;
+}
+.t{
+  text-align: center;
 }
